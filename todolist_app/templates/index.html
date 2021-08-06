@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title  %}
+    <label>Home Page</label>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{welcome_message}}</h1>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4 mt-5">
+            <img src="{% static 'images/1.jpg' %}" alt="1" width=250 height=500>
+        </div>
+    <div class="col-lg-4 mt-5">
+      <img src="{% static 'images/2.jpg' %}" alt="2" width=250 height=500>
+    </div>
+    <div class="col-lg-4 mt-5">
+      <img src="{% static 'images/3.jpg' %}" alt="3" width=500 height=250>
+    </div>
+    </div>
+    </div>
+{% endblock content %}
